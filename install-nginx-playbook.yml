@@ -1,0 +1,11 @@
+---
+- name: Install Nginx
+  hosts: demo-srvs
+  become: yes
+
+  tasks:
+  - name: Install Nginx on Demo Servers
+    apt:
+      name: nginx
+      state: present
+
